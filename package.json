@@ -1,0 +1,28 @@
+{
+  "name": "node-forum",
+  "version": "1.0.0",
+  "description": " basic message board",
+  "main": "node-forum.js",
+  "dependencies": {
+    "express": "^4.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinmleung/node-forum.git"
+  },
+  "keywords": [
+    "forum"
+  ],
+  "author": "Colin Leung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colinmleung/node-forum/issues"
+  },
+  "homepage": "https://github.com/colinmleung/node-forum"
+}
