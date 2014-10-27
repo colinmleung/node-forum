@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+head
+  title Sign Up
+body
+  h1 Sign Up
+  form(name="signUp", method="POST")
+    label(for="username") Username:
+    input(id="username", type="text")
+    br
+    label(for="password") Password:
+    input(id="password", type="password")
+    br
+    label(for="passwordConfirmation") Password Confirmation:
+    input(id="passwordConfirmation", type="password")
+    br
+    input(type="submit", value="Submit")
