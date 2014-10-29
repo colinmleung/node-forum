@@ -2,6 +2,9 @@ doctype html
 html(lang="en")
 head
   title Log In
+  if showTests
+    link(rel="stylesheet", href="/vendor/mocha.css")
+  script(src="//code.jquery.com/jquery-2.0.2.min.js")
 body
   h1 Log In
   form(name="logIn", method="POST")
@@ -12,3 +15,16 @@ body
     input(id="password", name="password", type="password")
     br
     input(type="submit", value="Submit")
+  if showTests
+    #mocha
+      script(src="/vendor/mocha.js")
+      script(src="/vendor/chai.js")
+      script.
+        mocha.ui('tdd');
+        var assert = chai.assert;
+      script(src="/tests/global.js")
+      if pageTestScript
+        script(src=pageTestScript)
+      script.
+        mocha.run();
+        
